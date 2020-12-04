@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Poppins:wght@700;800&display=swap');
+
+* {
+  text-decoration: none !important;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+  scroll-behavior:smooth;
+  background-color: #fff !important;
+  color: #1E1C24;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  margin: 0;
+  overflow-x: hidden !important;
+}
+
+#root {
+  width: 100vw !important;
+}
+
+a,
+button {
+  cursor: pointer !important;
+  outline: none;
+}
+
+a:active, 
+a:focus {
+  -moz-outline-style: none !important; 
+  border: none !important;
+  outline-style: none !important;
+  outline: 0 !important;
+}
+
+input,
+select,
+textarea,
+button {
+  -moz-outline: none !important; 
+  -moz-outline-style: none !important; 
+  outline: none !important;
+  outline-width: 0 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  -moz-outline: none !important; 
+  box-shadow: none!important;
+  outline: none !important;
+  outline-width: 0 !important;
+  outline: 0 !important;
+}
+
+::selection {
+  background-color: #FFE7AA !important;
 }

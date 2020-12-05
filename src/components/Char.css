@@ -1,0 +1,31 @@
+/* CHAR */
+.char {
+    width: 50%;
+    z-index: 999;
+    height: 657px;
+    position: absolute;
+    right: 10%;
+    overflow: hidden;
+}
+
+.char path {
+    border: transparent;
+}
+
+@media (max-width: 768px) {
+    .char {
+        z-index: 0;
+        position: absolute;
+        width: 60%;
+        right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .char {
+        position: absolute;
+        width: 60%;
+        height: 550px;
+        right: -20px;
+    }
+}

@@ -1,0 +1,136 @@
+/* HEADER */
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header .container {
+    padding: 0;
+}
+
+.header__logo {
+    font-family: 'Poppins', sans-serif;
+    color: #525FFB;
+    cursor: pointer;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.header__logo img {
+    width: 32px;
+}
+
+.header__content {
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.header__content-left {
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    margin: 0 15px;
+    resize: vertical;
+    overflow: auto;
+    height: 657px;
+}
+
+.header__content-left span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header__content-left .form__field {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: left;
+}
+
+.header__content-left .form__input {
+    padding-left: 20px;
+    padding-top: 2px;
+    width: 300px;
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ebebeb;
+}
+
+.header__content-left .form__input::placeholder {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+.header__content-left .form__btn {
+    width: 150px;
+    height: 50px;
+    padding-top: 2px;
+    background-color: #525FFB;
+    font-size: 18px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+}
+
+.header__user-count,
+.header__user-count span {
+    font-size: 24px !important;
+    color: rgb(81, 79, 87) !important;
+    margin-bottom: 80px;
+}
+
+.header__user-count span {
+    margin-left: 5px;
+}
+
+span.Typewriter__wrapper {
+    margin-left: 10px !important;
+}
+@media (max-width: 992px) {
+    .header__content-left span {
+        font-size: 36px;
+    }
+
+    .header__content-left .form__input {
+        width: 230px;
+    }
+
+    .header__content-left .form__btn {
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .header__user-count,
+    .header__user-count span {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 768px) {
+    header .container {
+        padding: 0 5%;
+    }
+
+    .header__content-left {
+        width: 150% !important;
+        margin-left: 5%;
+        z-index: 999;
+    }
+
+    .header__content-left form {
+        z-index: 999;
+    }
+
+    .header__content-left span {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__content-left {
+        height: 550px;
+    }
+}

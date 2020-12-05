@@ -1,10 +1,13 @@
 import React from 'react'
+import BackGround from 'components/BackGround';
+import Footer from 'components/Footer';
 
 const Home = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <BackGround />
+            <Footer />
+        </>
     )
 }
 

@@ -16,9 +16,9 @@ const NotFound = () => {
                 <h1>404</h1>
                 <span>not found</span>
                 <div className="detail">
-                    <Link className="detail__link" onClick={onClick}>
+                    <a className="detail__link" onClick={onClick}>
                         Back
-                    </Link>
+                    </a>
                     <Link className="detail__link" to="/">
                         Home
                     </Link>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Intro.css';
-import LoadingSpinner from 'components/LoadingSpinner';
+import Loading from './Loading';
+import LoadingSpinner from './LoadingSpinner';
 
 const Intro = () => {
-    const youtubeUrl = "https://www.youtube.com/embed/EwEsWtinZ3w?autoplay=1&mute=1";
     const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
         setIsLoaded(true);
@@ -22,7 +22,7 @@ const Intro = () => {
                         <iframe
                             frameborder="0"
                             className="intro__iframe"
-                            src={youtubeUrl}
+                            src="https://www.youtube.com/embed/EwEsWtinZ3w?autoplay=1&mute=1"
                         >
                         </iframe>
                         : <LoadingSpinner />}

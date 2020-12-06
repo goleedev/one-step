@@ -1,0 +1,17 @@
+/* LOADING SPINNER */
+.loading-container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 20% auto;
+}
+
+.loading-container h5 {
+    margin-top: 10%;
+    font-size: 18px !important;
+}
+
+.loading {
+    width: 70px !important;
+    height: 70px !important;
+}

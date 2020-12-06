@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from 'components/Header';
 import Intro from 'components/Intro';
-import More from './More';
+import Contribution from 'components/Contribution';
+import More from 'components/More';
 
 const Main = () => {
     return (
@@ -9,6 +10,7 @@ const Main = () => {
             <Header />
             <Intro />
             <More />
+            <Contribution />
         </>
     );
 };

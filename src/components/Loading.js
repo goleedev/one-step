@@ -1,8 +1,6 @@
 import React from 'react';
 import './Loading.css';
 
-//Loading
-//https://codepen.io/FlorinCornea/pen/JjXeyzz
 const Loading = () => {
     return (
         <div className="page">

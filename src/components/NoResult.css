@@ -1,4 +1,13 @@
 /* NO RESULT */
 .no-result {
     margin: 15% auto;
+    text-align: center;
+}
+
+.no-result h3 {
+    font-size: 24px;
+}
+
+.no-result p {
+    font-size: 16px;
 }

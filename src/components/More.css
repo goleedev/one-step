@@ -22,6 +22,17 @@
     margin-right: 5px;
 }
 
+.more__post {
+    width: 100%;
+    z-index: 999;
+    background-color: #E9F0FF;
+    height: 300px;
+}
+
+.more__post h4 {
+    color: #1E1C24;
+}
+
 @media (max-width: 992px) {
     .more {
         padding: 0 5%;

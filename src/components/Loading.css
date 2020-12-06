@@ -5,7 +5,6 @@
     height: 40px;
     border-radius: 50px;
     overflow: hidden;
-    filter: drop-shadow(0.2rem 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
 }
 
 .progress {
@@ -16,19 +15,6 @@
     width: 20%;
     height: 100% !important;
     border-radius: 50px;
-}
-
-.progress__person {
-    animation: loading;
-    position: relative;
-    left: 47%;
-    width: 45px;
-    height: 45px;
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
 }
 
 .page {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom/cjs/react-router-dom';
-import missing from 'images/find.png';
+import Find from 'components/svg/Find';
 import './NotFound.css';
 
 const NotFound = () => {
@@ -23,7 +23,7 @@ const NotFound = () => {
                         Home
                     </Link>
                 </div>
-                <img src={missing} alt="person-missing" />
+                <Find />
             </div>
         </div>
     );

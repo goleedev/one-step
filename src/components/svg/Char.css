@@ -8,10 +8,6 @@
     overflow: hidden;
 }
 
-.char path {
-    border: transparent;
-}
-
 @media (max-width: 768px) {
     .char {
         z-index: 0;

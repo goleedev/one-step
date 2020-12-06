@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import CountUp from 'react-countup';
-import { Link } from 'react-router-dom';
-import Char from './Char';
+import Char from './svg/Char';
 import logo from 'images/logo.png';
 import './Header.css';
 
@@ -39,7 +38,7 @@ const Header = () => {
                                 />
                                 <br/>     
                             </span>
-                            <span className="row">1 Step 가까워진다.</span>
+                            <span className="row">1 Step 가까워진다</span>
                         </h2>
                         <div className="header__user-count row">👏
                         <CountUp start={0} end={userCount} delay={0}>

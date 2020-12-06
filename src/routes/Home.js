@@ -1,16 +1,16 @@
 import React from 'react'
-import Header from 'components/Header';
-import BackGround from 'components/BackGround';
+import BackGround from 'components/svg/BackGround';
 import Footer from 'components/Footer';
+import Main from 'components/Main';
 
 const Home = () => {
     return (
         <>
-            <Header />
+            <Main />
             <BackGround />
             <Footer />
         </>
     )
 }
 
-export default Home
+export default Home;

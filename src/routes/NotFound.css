@@ -1,68 +1,71 @@
 /* NOT FOUND */
 body {
-    background-color: rgba(255,231,170, .5)
+  background-color: rgb(234,241,251, .8) !important;
 }
 
 .page {
-    margin: 0;
-    height: 100vh;
-    width: 100%;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
 }
 
 .content {
-    text-align: center;
-    color: #1E1C24 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    filter: drop-shadow(0.2rem 0.2rem 0.35rem rgba(0, 0, 0, 0.5));
-    background-color: #525FFB;
-    border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  filter: drop-shadow(0.2rem 0.2rem 0.35rem rgba(0, 0, 0, 0.5));
+  background-color: #525FFB;
+  border-radius: 10px;
 }
 
 .content h1 {
-    color: #FFE7AA;
-    margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  color: #FFE7AA;
+  margin-bottom: 0;
 }
 
 .content span {
-    color: #fafafa;
+  color: #fafafa;
 }
 
 .detail__link {
-    position:relative;
-    overflow:hidden !important;
-    z-index: 1;
-    border: 3px #FFE7AA solid;
-    color: #FFE7AA !important;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 5px;
-    margin: 0 5px;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+  position:relative;
+  overflow:hidden !important;
+  z-index: 1;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important;
+  border: 3px #FFE7AA solid;
+  color: #FFE7AA !important;
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0 5px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .detail__link:before,
 .detail__link:after{
-    content:'';
-    display:block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    transition:.4s;
+  content:'';
+  display:block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  transition:.4s;
 }
 
 .detail__link:hover {
-    color: #525FFB !important;
-    background-color: #FFE7AA; 
-    
+  color: #525FFB !important;
+  background-color: #FFE7AA; 
 }
 
 .detail__link:before,
@@ -85,4 +88,8 @@ body {
   width: 24px;
   height: 24px;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  
 }

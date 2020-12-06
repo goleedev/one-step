@@ -110,15 +110,19 @@ footer .container {
     }
 
     .form__input {
-        width: 250px;
+        width: 230px;
     }
 
     .form__btn {
-        width: 150px;
+        width: 130px;
     }
 }
 
 @media (max-width: 768px) {
+    footer {
+        position: absolute;
+        bottom: -1300px;
+    }
     footer .container {
         padding: 0 5%;
     }

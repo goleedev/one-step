@@ -1,5 +1,4 @@
 import React from 'react';
-import person from '../images/person-run.png';
 import './Loading.css';
 
 //Loading
@@ -9,7 +8,7 @@ const Loading = () => {
         <div className="page">
             <span>loading...</span>
             <div className="progress__bar">
-                <div className="progress"><img alt="person-running" src={person} className="progress__person" /></div>
+                <div className="progress"></div>
             </div>
         </div>
     );

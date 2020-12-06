@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Intro.css';
+import LoadingSpinner from 'components/LoadingSpinner';
 
 const Intro = () => {
+    const youtubeUrl = "https://www.youtube.com/embed/EwEsWtinZ3w?autoplay=1&mute=1";
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+        setIsLoaded(true);
+    }, []);
     return (
         <>
             <div className="intro">
@@ -12,12 +18,14 @@ const Intro = () => {
                     시즌 별 <span>특집 시리즈</span>와 <span>쿼터별 퀴즈</span> 까지!
                     </p>
                     <div className="intro__video">
+                        {isLoaded ?
                         <iframe
                             frameborder="0"
                             className="intro__iframe"
-                            src="https://www.youtube.com/embed/EwEsWtinZ3w?autoplay=1&mute=1"
+                            src={youtubeUrl}
                         >
                         </iframe>
+                        : <LoadingSpinner />}
                     </div>
                 </div>
             </div>

@@ -4,6 +4,8 @@ import './Char.css';
 function Char() {
   return (
     <svg
+      data-aos="fade-left"
+      data-aos-duration="1000"
       className="char"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { dbService } from "fbase";
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-import { Link } from 'react-router-dom/cjs/react-router-dom';
 import Loading from 'components/Loading';
 import NoResult from 'components/NoResult';
 import './More.css';

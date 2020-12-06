@@ -1,10 +1,12 @@
 /* INTRO */
 .intro {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 829px;
-    margin: 80px auto;
-    top: 830px;
+    height: 100vh;
+    margin: 0 auto;
+    background: no-repeat url('../images/bg2.png');
+    background-position: left center;
+    background-size: 100% 100%;
 }
 
 .intro__title {
@@ -45,9 +47,6 @@
 @media (max-width: 768px) {
     .intro {
         padding: 0 5%;
-        top: 550px;
-        height: 550px !important;
-        display: block;
     }
 
     .intro__des {

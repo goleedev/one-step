@@ -10,14 +10,13 @@
 
 html {
   scroll-behavior:smooth;
-  background-color: #fff !important;
-  color: #1E1C24;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
   margin: 0;
+  background-color: #fff !important;
   overflow-x: hidden !important;
 }
 

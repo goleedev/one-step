@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import { dbService } from "fbase";
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
@@ -76,13 +77,17 @@ const More = () => {
         <>
             <div className="more">
                 <div className="container">
-                    <h3 className="more__title">1 STEP 둘러보기</h3>
+                    <Fade left duration={600}>
+                        <h3 className="more__title">1 STEP 둘러보기</h3>
+                    </Fade>
+                    <Fade left duration={800}>
                     <div className="more__list row">
                         <span id="all" onClick={onClick}>전체</span>
-                        <span id="tech" onClick={onClick}>테크</span>
-                        <span id="dev" onClick={onClick}>개발</span>
-                        <span id="career" onClick={onClick}>커리어</span>
-                    </div>
+                        <span id="tech" onClick={onClick}>| 테크</span>
+                        <span id="dev" onClick={onClick}>| 개발</span>
+                        <span id="career" onClick={onClick}>| 커리어</span>
+                        </div>
+                    </Fade>
                     {!isLoaded
                         ? <LoadingSpinner />
                         : noResult    
@@ -90,8 +95,8 @@ const More = () => {
                         : <>
                         <div className="more__posts container row">
                             {posts.map((post) =>
-                            <Slide bottom duration={300}>
-                                <div key={post.id} className="more__post col-md-3 col-sm-6">
+                            <Slide bottom duration={400}>
+                                <div key={post.id} className="more__post col-lg-3 col-md-6">
                                     <h4>{post.title}</h4>
                                     <p>{post.content}</p>
                                 </div>

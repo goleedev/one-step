@@ -19,3 +19,17 @@
     font-size: 16px;
     margin: 0;
 }
+
+@media (max-width: 552px) {
+    .react-reveal.no-result {
+        height: calc(1200px - 20vh);
+    }
+
+    .no-result {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -20,7 +20,7 @@ const Intro = () => {
                     <div className="intro__video">
                         {isLoaded ?
                         <iframe
-                            frameborder="0"
+                            frameBorder="0"
                             className="intro__iframe"
                             src="https://www.youtube.com/embed/EwEsWtinZ3w?autoplay=1&mute=1"
                         >

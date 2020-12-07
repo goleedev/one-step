@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Slide from 'react-reveal/Slide';
 import { dbService } from "fbase";
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import LoadingSpinner from 'components/LoadingSpinner';
@@ -6,6 +7,7 @@ import NoResult from 'components/NoResult';
 import './More.css';
 
 const More = () => {
+    const limtNumber = 4;
     const history = useHistory();
     const [isLoaded, setIsLoaded] = useState(false);
     const [noResult, setNoResult] = useState(false);
@@ -15,6 +17,7 @@ const More = () => {
         dbService
             .collection('posts')
             .orderBy("createdAt", "desc")
+            .limit(limtNumber)
             .onSnapshot((snapshot) => {
                 let postArray = snapshot.docs.map((doc) => ({
                     id: doc.id,
@@ -24,15 +27,19 @@ const More = () => {
             })
         setIsLoaded(true);
     }, []);
+    const onLoadMore = () => {
+        window.scrollTo(0, 0);
+        history.push("/post");
+    };
     const onClick = (event) => {
         const {
             target: { id },
         } = event;
-        if (id !== "all") {
+        if (id === "all") {
             dbService
                 .collection('posts')
-                .where("type", "==", id)
                 .orderBy("createdAt", "desc")
+                .limit(limtNumber)
                 .onSnapshot((snapshot) => {
                     let postArray = snapshot.docs.map((doc) => ({
                         id: doc.id,
@@ -48,7 +55,9 @@ const More = () => {
             
         } else {
             dbService.collection('posts')
+                .where("category", "==", id)
                 .orderBy("createdAt", "desc")
+                .limit(limtNumber)
                 .onSnapshot((snapshot) => {
                     let postArray = snapshot.docs.map((doc) => ({
                         id: doc.id,
@@ -81,13 +90,16 @@ const More = () => {
                         : <>
                         <div className="more__posts container row">
                             {posts.map((post) =>
-                                <div className="more__post col-sm-3">
+                            <Slide bottom duration={300}>
+                                <div key={post.id} className="more__post col-md-3 col-sm-6">
                                     <h4>{post.title}</h4>
                                     <p>{post.content}</p>
                                 </div>
+                            </Slide>
                             )}
                         </div>
                     </>}
+                    <h5 className="more__load-more" onClick={onLoadMore}>👉 소식 더 보기</h5>
                 </div>
             </div>
         </>

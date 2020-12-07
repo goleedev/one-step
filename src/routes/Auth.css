@@ -1,0 +1,28 @@
+/* AUTH */
+.container .login {
+    text-align: center;
+    margin: 25vh auto !important;
+}
+
+.login {
+    height: 50vh;
+}
+
+.login h3 {
+    color: #1E1C24;
+    font-size: 4rem;
+    margin-bottom: 10%;
+}
+
+.login .btn {
+    background-color: #1E1C24;
+    color: #fafafa;
+    padding: 2% 8%;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.login .btn:hover {
+    background-color: #525FFB;
+    color: #fafafa;
+}

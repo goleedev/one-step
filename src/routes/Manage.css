@@ -1,0 +1,15 @@
+/* MANAGE */
+.manage.container {
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    margin: 10% auto !important;
+    margin-bottom: 0% !important;
+}
+
+.title {
+    color: #1E1C24;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}

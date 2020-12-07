@@ -1,0 +1,35 @@
+/* ADMIN */
+.admin.container {
+    text-align: center;
+    margin: 25vh auto !important;
+}
+
+.admin {
+    height: 50vh;
+}
+
+.admin h3 {
+    color: #1E1C24;
+    font-size: 4rem;
+}
+
+.admin__box h4 {
+    cursor: pointer;
+    background-color: #1E1C24;
+    color: #fafafa;
+    padding: 8%;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.admin__box h4:hover{
+    background-color: #525FFB;
+    color: #fafafa;
+}
+
+.logout {
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    font-size: 24px;
+}

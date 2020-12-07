@@ -9,11 +9,14 @@ body {
   width: 100%;
 }
 
-.content {
+.page__content {
   text-align: center;
   padding: 30px;
+  width: 500px;
   padding-bottom: 0;
+  height: 60vh;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -24,14 +27,14 @@ body {
   border-radius: 10px;
 }
 
-.content h1 {
+.page__content h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 56px;
   color: #FFE7AA;
   margin-bottom: 0;
 }
 
-.content span {
+.page__content span {
   color: #fafafa;
 }
 
@@ -90,6 +93,8 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  
+@media (max-width: 552px) {
+  .page__content {
+    width: 95%;
+  }
 }
